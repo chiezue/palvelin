@@ -1,0 +1,19 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kissat</title>
+  <link rel="stylesheet" href="/tyylit/style.css" />
+</head>
+<body>
+  <h1>Kissat</h1>
+
+  <% kissat.forEach(function(kissa) { %>
+    <img src="/images/<%= kissa %>" alt="Kissa" width="200" />
+  <% }); %>
+
+  <p><a href="/">Takaisin etusivulle</a></p>
+</body>
+</html>

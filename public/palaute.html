@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Palaute</title>
+  </head>
+  <body>
+    <h1>Palaute</h1>
+
+    <form method="POST" action="/palaute">
+      <div>
+        <label>
+          Nimi:
+          <input type="text" name="nimi" required />
+        </label>
+      </div>
+
+      <div>
+        <label>
+          Sähköposti:
+          <input type="email" name="sahkoposti" required />
+        </label>
+      </div>
+
+      <div>
+        <label>
+          Palaute:
+          <br />
+          <textarea name="palaute" rows="5" cols="30" required></textarea>
+        </label>
+      </div>
+
+      <button type="submit">Lähetä</button>
+    </form>
+  </body>
+</html>
