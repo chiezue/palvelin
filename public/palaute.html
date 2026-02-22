@@ -3,34 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <title>Palaute</title>
+    <link rel="stylesheet" href="/lomake.css" />
   </head>
   <body>
-    <h1>Palaute</h1>
+    <div class="container">
+      <h1>Anna palautetta</h1>
 
-    <form method="POST" action="/palaute">
-      <div>
-        <label>
-          Nimi:
-          <input type="text" name="nimi" required />
-        </label>
-      </div>
+      <form method="POST" action="/palaute">
+        <label for="nimi">Nimi</label>
+        <input type="text" id="nimi" name="nimi" required />
 
-      <div>
-        <label>
-          Sähköposti:
-          <input type="email" name="sahkoposti" required />
-        </label>
-      </div>
+        <label for="sahkoposti">Sähköposti</label>
+        <input type="email" id="sahkoposti" name="sahkoposti" required />
 
-      <div>
-        <label>
-          Palaute:
-          <br />
-          <textarea name="palaute" rows="5" cols="30" required></textarea>
-        </label>
-      </div>
+        <label for="palaute">Palaute</label>
+        <textarea id="palaute" name="palaute" required></textarea>
 
-      <button type="submit">Lähetä</button>
-    </form>
+        <button type="submit">Lähetä</button>
+      </form>
+    </div>
   </body>
 </html>
