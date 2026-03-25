@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "palaute-rest-api",
+    "name": "Palaute REST API",
+    "description": "REST-palvelin palautteen hallintaa varten",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET - Kaikki palautteet",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3001/palaute",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["palaute"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET - Palaute ID:llä",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3001/palaute/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["palaute", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST - Uusi palaute",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Anssi Ahonen\",\n  \"email\": \"anssi@example.com\",\n  \"feedback\": \"Erittäin hyvää palvelua!\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3001/palaute/uusi",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["palaute", "uusi"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT - Muokkaa palautetta",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Päivitetty Nimi\",\n  \"feedback\": \"Päivitetty palaute\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3001/palaute/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["palaute", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE - Poista palaute",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3001/palaute/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["palaute", "1"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
