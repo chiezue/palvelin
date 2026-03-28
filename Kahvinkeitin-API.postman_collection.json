@@ -1,0 +1,80 @@
+{
+  "info": {
+    "_postman_id": "kahvinkeitin-rest-api",
+    "name": "Kahvinkeittimen REST API",
+    "description": "REST-palvelin kahvinkeittimen simulointia varten",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3002/status",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3002",
+          "path": ["status"]
+        }
+      }
+    },
+    {
+      "name": "Laita päälle",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3002/set/on",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3002",
+          "path": ["set", "on"]
+        }
+      }
+    },
+    {
+      "name": "Laita pois päältä",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3002/set/off",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3002",
+          "path": ["set", "off"]
+        }
+      }
+    },
+    {
+      "name": "Vaihdä tilaa",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3002/switch",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3002",
+          "path": ["switch"]
+        }
+      }
+    },
+    {
+      "name": "Hae kahvi",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3002/coffee",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3002",
+          "path": ["coffee"]
+        }
+      }
+    }
+  ]
+}
