@@ -1,8 +1,14 @@
+
 const express = require("express");
 const app = express();
 
 const path = require("path");
 const PORT = 3002;
+
+// Palvele juurihakemiston kahvinkeitin.js, jos sitä pyydetään
+app.get("/kahvinkeitin.js", (req, res) => {
+  res.sendFile(path.join(__dirname, "kahvinkeitin.js"));
+});
 
 app.use(express.static(path.join(__dirname, "public")));
 
