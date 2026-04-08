@@ -29,6 +29,34 @@
       "username": "root",
       "database": "mysql",
       "askForPassword": true
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "urheilukisat",
+      "database": "DB_URHEILUKISAT",
+      "username": "chiomaifezue"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "database": "DB_URHEILUKISAT",
+      "username": "adminc",
+      "name": "kisatulokset"
     }
   ]
 }
